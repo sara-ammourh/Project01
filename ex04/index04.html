@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+        <head>
+            <meta charset="UTF-8" />
+            <title>42</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <body>
+            <h1>User Registration Form</h1>
+        <form>
+            <h3>Personal Details</h3>
+            <label for="name">Enter your name:</label>
+            <input id="name" type="text" minlength="3" required />
+            <br>
+            <br>
+            <label for="email">Enter your email:</label>
+            <input id="email" type="email" required />
+            <br>
+            <br>
+            <label for="password">Enter your password:</label>
+            <input id="password" type="password" minlength="8" required />
+            <h3>Group Details</h3>
+            <p>Select your group:</p>
+            <input type="radio" id="42irbid" name="group" value="42Irbid" required />
+            <label for="42irbid">42Irbid</label>
+            <br>
+            <input type="radio" id="42amman" name="group" value="42Amman" required />
+            <label for="42amman">42Amman</label>
+            <br>
+            <input type="radio" id="other" name="group" value="other" required />
+            <label for="other">other</label>
+            <br>
+            <h3>Academics & Skills</h3>
+            <label for="academic-level">Choose academic level: </label>
+            <select name="academic-level" id="academic-level" required>
+                <option value="">--Please choose an option--</option>
+                <option value="none">None or less than High School</option>
+                <option value="diploma">High School Diploma</option>
+                <option value="bsc">Bachelor's Degree</option>
+                <option value="msc">Master's Degree</option>
+                <option value="phd">Doctorate's Degree</option>
+                <option value="post-doc">Post Doctoral Researcher</option>
+            </select>
+            <br>
+            <br>
+            <label for="skills">Write down skills and/or achievements that you have:</label>
+            <br>
+            <textarea id="skills"></textarea>
+            <h3>Agreement Terms:</h3>
+            <input id="data_ag" type="checkbox" name="data_agree" required />
+            <label for="data_ag">I agree to sharing my data with the registration party</label>
+            <br>
+            <input id="offer_ag" type="checkbox" name="offer_agree" />
+            <label for="offer_ag">I agree to recieving notifications and offers from the registration party</label>
+            <br>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        </body>
+    </html>
